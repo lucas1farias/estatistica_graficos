@@ -1,0 +1,683 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, #222, #444, black);
+  color: #0f0;
+  font-family: oxygen;
+  letter-spacing: 3px;
+}
+
+.cover {
+  padding: 2rem 0;
+  border: black solid 1px;
+  box-shadow: 0 0 10px 0 black;
+}
+
+.question {
+  display: flex;
+  text-shadow: 0 0 20px black;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin: 2rem 0 .5rem 0;
+}
+
+.apply-flex {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.apply-flex-column {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.apply-flex-with-gap {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ink {
+  color: black;
+  border: black solid .1px;
+  background-image: linear-gradient(45deg, #0f0, mediumseagreen);
+  /* border-radius: 1rem; */
+  padding: 1rem .2rem;
+  text-align: center;
+  /* display: inline-block; */
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.distribution {
+  font-size: .9rem;
+}
+
+
+
+
+
+.graphic-first {
+  font-size: 1.2rem;
+  gap: 2rem;
+}
+
+/* PORCENTAGENS */
+.graphic-first div:nth-child(1) {
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+}
+
+.graphic-first div:nth-child(2) {
+  color: #0f0;
+  text-shadow: 0 0 10px #0f0;
+}
+
+.graphic-first div:nth-child(3) {
+  color: magenta;
+  text-shadow: 0 0 10px magenta;
+}
+
+.graphic-first div:nth-child(4) {
+  color: orangered;
+  text-shadow: 0 0 10px orangered;
+}
+
+.graphic-first div:nth-child(5) {
+  color: yellowgreen;
+  text-shadow: 0 0 10px yellowgreen;
+}
+
+.graphic-first div:nth-child(6) {
+  color: aqua;
+  text-shadow: 0 0 10px aqua;
+}
+
+.graphic-first .pie {
+  width: 35vh;
+  height: 35vh;
+  border-radius: 50%;
+  background: repeating-conic-gradient(
+    from 0deg,
+    #fff 0deg calc(3.6deg * 65.6),
+    #0f0 calc(3.6deg * 65.6) calc(3.6deg * 87.5),
+    magenta calc(3.6deg * 87.5) calc(3.6deg * 93.8),
+    orangered calc(3.6deg * 93.8) calc(3.6deg * 96.9),
+    yellowgreen calc(3.6deg * 96.9) calc(3.6deg * 100)
+  );
+  box-shadow: 0 0 10px #fff;
+  animation: spinning-circle infinite 20s ease;
+}
+
+.graphic-table-1st-version {
+  margin: 1rem 0 0 0;
+}
+
+.graphic-table-1st-version > * {
+  background-color: #444;
+  padding: .5rem;
+  border: black solid 1.5px;
+  /* border-radius: 1rem; */
+  color: black;
+  font-weight: bold;
+  text-shadow: 0 0 10px black;
+  margin: .5rem 0;
+  cursor: pointer;
+}
+
+.graphic-table-2nd-version > * {
+  background-color: #444;
+  padding: .5rem;
+  border: black solid 1.5px;
+  color: black;
+  font-weight: bold;
+  /* text-shadow: 0 0 10px aqua; */
+  margin: .5rem 0;
+  cursor: pointer;
+}
+
+
+
+
+
+.graphic-second > * {
+  color: black;
+  text-shadow: 0 0 10px white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.graphic-second div:nth-child(1) {
+  text-shadow: 0 0 10px #fff;
+  background-color: yellowgreen;
+  box-shadow: 0 0 10px 0 yellowgreen;
+  width: 560.3px;
+  height: 1.5rem;
+}
+
+.graphic-second div:nth-child(2) {
+  text-shadow: 0 0 10px crimson;
+  background-color: crimson;
+  box-shadow: 0 0 10px 0 crimson;
+  width: 430.8px;
+  height: 1.5rem;
+}
+
+
+
+
+
+.graphic-third {
+  font-size: 1.2rem;
+  /* Passar os círculos para uma segunda linha */
+  gap: 1.5rem;
+}
+
+.graphic-third .percentages {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  animation: background-light infinite 5s;
+}
+
+.graphic-third .labels div:nth-child(1) {
+  color: #c7e9f5;
+  text-shadow: 0 0 10px #c7e9f5;
+}
+
+.graphic-third .labels div:nth-child(2) {
+  color: #3cfc7f;
+  text-shadow: 0 0 10px #3cfc7f;
+}
+
+.graphic-third .labels div:nth-child(3) {
+  color: #48ecdd;
+  text-shadow: 0 0 10px #48ecdd;
+}
+
+.graphic-third .labels div:nth-child(4) {
+  color: sandybrown;
+  text-shadow: 0 0 10px sandybrown;
+}
+
+.graphic-third .percentages:nth-child(2) {
+  background-color: #c7e9f5;
+  box-shadow: 0 0 10px 0 #c7e9f5;
+  background: repeating-conic-gradient(
+    from 0deg,
+    #c7e9f5 0deg calc(3.6deg * 71.9),
+    #222 calc(3.6deg * 71.9) calc(3.6deg * 100)
+  );
+}
+
+.graphic-third .percentages:nth-child(3) {
+  background-color: #3cfc7f;
+  box-shadow: 0 0 10px 0 #3cfc7f;
+  background: repeating-conic-gradient(
+    from 0deg,
+    #3cfc7f 0deg calc(3.6deg * 15.9),
+    #222 calc(3.6deg * 15.9) calc(3.6deg * 100)
+  );
+}
+
+.graphic-third .percentages:nth-child(4) {
+  background-color: #48ecdd;
+  box-shadow: 0 0 10px 0 #48ecdd;
+  background: repeating-conic-gradient(
+    from 0deg,
+    #48ecdd 0deg calc(3.6deg * 12.5),
+    #222 calc(3.6deg * 12.5) calc(3.6deg * 100)
+  );
+}
+
+.sentence {
+  width: 150px;
+}
+
+.result {
+  border-radius: 50%;
+  color: ivory;
+  text-shadow: 0 0 10px ivory;
+}
+
+.results {
+  gap: .5rem;
+}
+
+.results > * {
+  text-align: center;
+}
+
+
+
+
+
+.graphic-fourth {
+  font-size: 1.2rem;
+}
+
+.graphic-fourth div:nth-of-type(1) {
+    color: #a4245b;
+    text-shadow: 0 0 10px #a4245b; 
+}
+
+.graphic-fourth div:nth-of-type(2) {
+    color: #86dd65;
+    text-shadow: 0 0 10px #86dd65; 
+}
+
+.graphic-fourth div:nth-of-type(3) {
+    color: #097ee4;
+    text-shadow: 0 0 10px #097ee4; 
+}
+
+.graphic-fourth div:nth-of-type(4) {
+    color: #cba742;
+    text-shadow: 0 0 10px #cba742; 
+}
+
+.graphic-fourth div:nth-of-type(5) {
+    color: black;
+    text-shadow: 0 0 10px black; 
+}
+
+.graphic-fourth .circle {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce infinite 1s;
+}
+
+/* Barra mais grossa */
+.graphic-fourth .circle::before {
+  content: '';
+  position: absolute;
+  /* Dimensões próximas do elemento */
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  background-color: #222;
+}
+
+.graphic-fourth .index-1::before,
+.graphic-fourth .index-2::before,
+.graphic-fourth .index-3::before,
+.graphic-fourth .index-4::before {
+  color: white;
+  text-shadow: 0 0 10px ivory;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.graphic-fourth .index-1::before {content: '56.3%';}
+.graphic-fourth .index-2::before {content: '25%';}
+.graphic-fourth .index-3::before {content: '15.6%';}
+.graphic-fourth .index-4::before {content: '3.1%';}
+
+.graphic-fourth .index-1 {
+  background: conic-gradient(#a4245b 202.68deg, #222 0deg);
+  border: #a4245b solid 1px;
+  box-shadow: 0 0 10px #a4245b;
+}
+
+.graphic-fourth .index-2 {
+  background: conic-gradient(#86dd65 90deg, #222 0deg);
+  border: #86dd65 solid 1px;
+  box-shadow: 0 0 10px #86dd65;
+}
+
+.graphic-fourth .index-3 {
+  background: conic-gradient(#097ee4 56.16deg, #222 0deg);
+  border: #097ee4 solid 1px;
+  box-shadow: 0 0 10px #097ee4;
+}
+
+.graphic-fourth .index-4 {
+  background: conic-gradient(#cba742 11.16deg, #222 0deg);
+  border: #cba742 solid 1px;
+  box-shadow: 0 0 10px #cba742;
+}
+
+
+
+
+
+.graphic-fifth {
+  font-size: 1.2rem;
+  gap: 1rem 3rem;
+}
+
+.graphic-fifth div:nth-child(1) {
+  color: yellowgreen;
+  text-shadow: 0 0 10px yellowgreen;
+}
+
+.graphic-fifth div:nth-child(2) {
+  color: aqua;
+  text-shadow: 0 0 10px aqua;
+}
+
+.graphic-fifth div:nth-child(3) {
+  color: ivory;
+  text-shadow: 0 0 10px ivory;
+}
+
+.graphic-fifth div:nth-child(4) {
+  color: yellow;
+  text-shadow: 0 0 10px yellow;
+}
+
+.graphic-fifth div:nth-child(5) {
+  color: crimson;
+  text-shadow: 0 0 10px crimson;
+}
+
+.graphic-fifth div:nth-child(6) {
+  color: black;
+  text-shadow: 0 0 10px black;
+}
+
+.graphic-fifth div:nth-child(7) {
+  color: #0f0;
+  text-shadow: 0 0 10px #0f0;
+}
+
+.graphic-fifth div:nth-child(8) {
+  color: sandybrown;
+  text-shadow: 0 0 10px sandybrown;
+}
+
+.graphic-fifth div:nth-child(9) {
+  color: orangered;
+  text-shadow: 0 0 10px orangered;
+}
+
+.graphic-fifth div:nth-child(10) {
+  color: gray;
+  text-shadow: 0 0 10px gray;
+}
+
+.graphic-fifth div:nth-child(11) {
+  color: mediumseagreen;
+  text-shadow: 0 0 10px mediumseagreen;
+}
+
+.graphic-fifth div:nth-child(12) {
+  color: firebrick;
+  text-shadow: 0 0 10px firebrick;
+}
+
+/* .graphic-fifth .frame {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 20%;
+  background: repeating-conic-gradient(
+    from 0deg,
+    yellowgreen 0deg calc(3.6deg * 21.9),
+    aqua calc(3.6deg * 21.9) calc(3.6deg * 34.4),
+    ivory calc(3.6deg * 34.4) calc(3.6deg * 46.9),
+    yellow calc(3.6deg * 46.9) calc(3.6deg * 56.3),
+    crimson calc(3.6deg * 56.3) calc(3.6deg * 65.7),
+    black calc(3.6deg * 65.7) calc(3.6deg * 75.10),
+    #0f0 calc(3.6deg * 75.10) calc(3.6deg * 84.5),
+    purple calc(3.6deg * 84.5) calc(3.6deg * 90.8),
+    orangered calc(3.6deg * 90.8) calc(3.6deg * 97.1),
+    gray calc(3.6deg * 97.1) calc(3.6deg * 100)
+  );
+  box-shadow: 0 0 10px #fff;
+} */
+
+.vertical-bars {
+  padding: 2rem;
+  gap: 3.5rem;
+}
+
+.vertical-bars div:nth-child(1) {
+  height: 210.9px;
+  width: 1rem;
+  background-color: yellowgreen;
+  box-shadow: 0 0 20px 0 yellowgreen;
+}
+
+.vertical-bars > * span {
+  position: relative;
+  top: -30px;
+  left: -25px;
+}
+
+.vertical-bars div:nth-child(2) {
+  height: 120.5px;
+  width: 1rem;
+  background-color: aqua;
+  box-shadow: 0 0 20px 0 aqua;
+}
+
+.vertical-bars div:nth-child(3) {
+  height: 120.5px;
+  width: 1rem;
+  background-color: ivory;
+  box-shadow: 0 0 20px 0 ivory;
+}
+
+.vertical-bars div:nth-child(4) {
+  height: 90.4px;
+  width: 1rem;
+  background-color: yellow;
+  box-shadow: 0 0 20px 0 yellow;
+}
+
+.vertical-bars div:nth-child(5) {
+  height: 90.4px;
+  width: 1rem;
+  background-color: crimson;
+  box-shadow: 0 0 20px 0 crimson;
+}
+
+.vertical-bars div:nth-child(6) {
+  height: 90.4px;
+  width: 1rem;
+  background-color: black;
+  box-shadow: 0 0 20px 0 black;
+}
+
+.vertical-bars div:nth-child(7) {
+  height: 90.4px;
+  width: 1rem;
+  background-color: #0f0;
+  box-shadow: 0 0 20px 0 #0f0;
+}
+
+.vertical-bars div:nth-child(8) {
+  height: 60.3px;
+  width: 1rem;
+  background-color: sandybrown;
+  box-shadow: 0 0 20px 0 sandybrown;
+}
+
+.vertical-bars div:nth-child(9) {
+  height: 60.3px;
+  width: 1rem;
+  background-color: orangered;
+  box-shadow: 0 0 20px 0 orangered;
+}
+
+.vertical-bars div:nth-child(10) {
+  height: 20.9px;
+  width: 1rem;
+  background-color: gray;
+  box-shadow: 0 0 20px 0 gray;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes spinning-circle {
+  0% {transform: rotate(0deg); box-shadow: 0 0 20px #fff;}
+  10% {transform: rotate(36deg); box-shadow: 0 0 20px #0f0;}
+  20% {transform: rotate(72deg); box-shadow: 0 0 20px magenta;}
+  30% {transform: rotate(108deg); box-shadow: 0 0 20px orangered;}
+  40% {transform: rotate(144deg); box-shadow: 0 0 20px yellowgreen;}
+  50% {transform: rotate(180deg); box-shadow: 0 0 20px #fff;}
+  60% {transform: rotate(216deg); box-shadow: 0 0 20px #0f0;}
+  70% {transform: rotate(252deg); box-shadow: 0 0 20px magenta;}
+  80% {transform: rotate(288deg); box-shadow: 0 0 20px orangered;}
+  90% {transform: rotate(324deg); box-shadow: 0 0 20px yellowgreen;}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes background-light {
+  20% {
+    box-shadow: 0 0 100px #444;
+  }
+  40% {
+    box-shadow: 0 0 70px #444;
+  }
+  60% {
+    box-shadow: 0 0 50px #444;
+  }
+  80% {
+    box-shadow: 0 0 25px #444;
+  }
+  100% {
+    box-shadow: 0 0 1px #444;
+  }
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateX(10px);
+    transform: translateY(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .sentence {
+    width: 140px;
+  }
+
+  .result {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .graphic-fourth .circle {
+    height: 120px;
+    width: 120px;
+  }
+
+  .graphic-fourth .circle::before {
+    height: 95px;
+    width: 95px;
+  }
+} 
+
+@media only screen and (max-width: 734px) { 
+  .graphic-third .percentages {
+    height: 125px;
+    width: 125px;
+  }
+} 
+
+@media only screen and (max-width: 660px) {
+  .graphic-third {
+    gap: .2rem;
+  }
+
+  .graphic-third .percentages {
+    height: 100px;
+    width: 100px;
+  }
+
+  .graphic-fourth .circle {
+    height: 100px;
+    width: 100px;
+  }
+
+  .graphic-fourth .circle::before {
+    height: 75px;
+    width: 75px;
+  }
+} 
+
+@media only screen and (max-width: 630px) {
+  /* .graphic-third */
+  .results {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .graphic-fourth {
+    gap: 0;
+  }
+} 
+
+@media only screen and (max-width: 560px) {
+  .graphic-second div:nth-child(1) {
+    width: 460.3px;
+  }
+
+  .graphic-second div:nth-child(2) {
+    width: 330.8px;
+  }
+} 
+
+@media only screen and (max-width: 522px) {
+  .graphic-third .percentages {
+    height: 90px;
+    width: 90px;
+  }
+} 
+
+@media only screen and (max-width: 500px) {
+  .graphic-second div:nth-child(1) {
+    width: 360.3px;
+  }
+
+  .graphic-second div:nth-child(2) {
+    width: 230.8px;
+  }
+
+  .graphic-third {
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .graphic-fourth {
+    flex-direction: column; 
+    gap: .5rem;
+  }
+}
