@@ -66,6 +66,19 @@ body {
   font-size: .9rem;
 }
 
+.layout {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: mediumseagreen;
+  border: mediumseagreen solid 1px;
+  padding: .2rem 1rem;
+  cursor: crosshair;
+  color: ivory;
+  border-radius: 10px;
+  box-shadow: 0 0 50px 0 mediumseagreen;
+}
+
 
 
 

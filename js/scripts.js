@@ -4,6 +4,26 @@ var root = document.compatMode =='BackCompat' ? document.body : document.documen
 var hasVerticalScrollbar = root.scrollHeight>root.clientHeight
 var hasHorizontalScrollbar = root.scrollWidth>root.clientWidth
 
+function char() {
+  let chars = 'abcdef'
+  let numbers = '0123456789'
+  let hexadecimal = []
+  
+  for (let index of chars) {
+    hexadecimal.push(index)
+  }
+  
+  for (let index of numbers) {
+    hexadecimal.push(index)
+  }
+
+  return hexadecimal[Math.floor(Math.random() * (hexadecimal.length - 0))]
+}
+
+function ink() {
+  return `#${char()}${char()}${char()}${char()}${char()}${char()}`
+}
+
 function firstGraphicDataShow({target}) {
   let graphicFirstDataDiv = document.querySelector('.graphic-first-data')
   graphicFirstDataDiv .classList.remove('hide')
@@ -43,6 +63,18 @@ function fifthGraphicDataHide({target}) {
   let graphicFifthDataDiv = document.querySelector('.graphic-fifth-data')
   graphicFifthDataDiv.classList.add('hide')
 }
+
+function changeLayout({target}) {
+  let specificTags = [...document.querySelectorAll('.graphic-table-1st-version > *')]
+  specificTags.forEach(tag => {
+    tag.style.color = 'ivory'
+  })
+  document.body.style.background = `linear-gradient(45deg, ${ink()}, ${ink()})`
+}
+
+// Botão que muda o layout
+let layoutBtn = document.querySelector('.layout')
+layoutBtn.addEventListener('click', changeLayout)
 
 // Botões do gráfico 1
 let graphicFirstBtnShow = document.querySelector('.graphic-first-btn-show')
